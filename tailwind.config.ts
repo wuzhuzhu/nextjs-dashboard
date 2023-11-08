@@ -1,3 +1,5 @@
+import { inter, lusitana } from './app/ui/fonts';
+import { notoSansSC } from './app/ui/fonts';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -26,6 +28,11 @@ const config: Config = {
         },
       },
     },
+    fontFamily: {
+      notoSansSC: ['var(--font-noto-sans-sc)', 'sans-serif'],
+      inter: ['var(--font-inter)', 'sans-serif'],
+      lusitana: ['var(--font-lusitana)', 'serif'],
+    }
   },
 
   plugins: [require('@tailwindcss/forms')],
